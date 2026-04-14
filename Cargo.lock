@@ -166,7 +166,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "querylens-rs"
+name = "querylens"
 version = "0.1.0"
 dependencies = [
  "anyhow",

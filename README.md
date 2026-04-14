@@ -4,19 +4,19 @@ QueryLens is a Rust CLI tool for analyzing SQL files, generating reports, scanni
 
 ## Features
 
-- `querylens-rs init` - Create a default configuration file
-- `querylens-rs report` - Generate structured SQL insights
-- `querylens-rs scan` - Deep scan for SQL issues and patterns
-- `querylens-rs score` - Calculate SQL quality scores
-- `querylens-rs diff` - Compare SQL files or versions
+- `querylens init` - Create a default configuration file
+- `querylens report` - Generate structured SQL insights
+- `querylens scan` - Deep scan for SQL issues and patterns
+- `querylens score` - Calculate SQL quality scores
+- `querylens diff` - Compare SQL files or versions
 
 ## Usage
 
 ```bash
-cargo run -- report examples/example_sql/simple_select.sql --format markdown
-cargo run -- scan example_sql --deep
-cargo run -- score example_sql --min-score 75
-cargo run -- diff example_sql/simple_select.sql example_sql/joins.sql --mode both
+querylens report example_sql/simple_select.sql --format markdown
+querylens scan example_sql --deep
+querylens score example_sql --min-score 75
+querylens diff example_sql/simple_select.sql example_sql/joins.sql --mode both
 ```
 
 ## Example SQL fixtures

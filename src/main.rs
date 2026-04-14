@@ -9,7 +9,7 @@ use commands::{diff::run_diff, report::run_report, scan::run_scan, score::run_sc
 use config::{Config, ConfigFormat};
 
 #[derive(Parser)]
-#[command(author, version, about = "QueryLens - SQL analysis and linting tool", long_about = None)]
+#[command(name = "querylens", author, version, about = "QueryLens - SQL analysis and linting tool", long_about = None)]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

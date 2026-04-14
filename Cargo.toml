@@ -1,0 +1,26 @@
+[package]
+name = "querylens-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["QueryLens Contributors"]
+description = "QueryLens - SQL analysis, linting and quality scoring in Rust"
+license = "MIT"
+homepage = "https://github.com/yourusername/querylens-rs"
+repository = "https://github.com/yourusername/querylens-rs"
+readme = "README.md"
+keywords = ["sql", "lint", "analysis", "quality", "cli"]
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.3", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+thiserror = "1.0"
+walkdir = "2.3"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3

@@ -1,8 +1,6 @@
-# QueryLens (Rust)
+# QueryLens
 
-QueryLens is a Rust-based SQL analysis CLI inspired by the Python `sqllens` implementation.
-
-QueryLens intentionally excludes built-in linting, since specialized Rust linting libraries are better suited for that responsibility.
+QueryLens is a Rust CLI tool for analyzing SQL files, generating reports, scanning for patterns, calculating quality scores, and comparing SQL structures.
 
 ## Features
 
